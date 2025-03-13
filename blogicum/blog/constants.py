@@ -1,0 +1,5 @@
+TITLE_LENGHT: int = 256
+
+LIMITATION: int = 15
+
+COUNT_OF_POSTS: int = 10

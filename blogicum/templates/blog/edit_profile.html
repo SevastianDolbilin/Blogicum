@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load django_bootstrap5 %}
+{% block title %}Редактировать профиль{% endblock %}
+{% block content %}
+  <h1 class="mb-5 text-center">Редактировать профиль {{ user.username }}</h1>
+  <div class="col d-flex justify-content-center">
+    <div class="card" style="width: 40rem;">
+      <div class="card-header">
+        Редактировать профиль
+      </div>
+      <div class="card-body">
+        <form method="post" action="{% url 'blog:edit_profile' user.username %}">
+          {% csrf_token %}
+          {% bootstrap_form form %}
+          {% bootstrap_button button_type="submit" content="Сохранить изменения" %}
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
