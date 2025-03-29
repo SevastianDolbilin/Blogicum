@@ -54,12 +54,15 @@ cd your-repo
     source venv/bin/activate
 
 3. Установка зависимостей
+   
     pip install -r requirements.txt
 
-4. Применение миграций и создание суперпользователя
+5. Применение миграций и создание суперпользователя
+   
     cd blogicum
     python manage.py migrate
     python manage.py createsuperuser
 
-5. Локальное развертывание проекта
+7. Локальное развертывание проекта
+   
     python manage.py runserver
