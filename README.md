@@ -45,6 +45,7 @@ git clone https://github.com/your-repo.git
 cd your-repo
 ```
 2. Создание и активация виртуального окружения
+3. 
     python -m venv venv
 
     # Windows
@@ -53,14 +54,16 @@ cd your-repo
     # Linux/MacOS
     source venv/bin/activate
 
-3. Установка зависимостей
+4. Установка зависимостей
    
     pip install -r requirements.txt
 
 5. Применение миграций и создание суперпользователя
    
     cd blogicum
+   
     python manage.py migrate
+   
     python manage.py createsuperuser
 
 7. Локальное развертывание проекта
